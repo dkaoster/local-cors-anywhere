@@ -1,6 +1,6 @@
 {
   "name": "local-cors-anywhere",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A quick npx script for running a local cors-anywhere instance",
   "main": "index.js",
   "bin": {

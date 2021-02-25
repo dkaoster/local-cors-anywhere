@@ -1,0 +1,36 @@
+{
+  "name": "local-cors-anywhere",
+  "version": "0.0.0",
+  "description": "A quick npx script for running a local cors-anywhere instance",
+  "main": "index.js",
+  "bin": {
+    "local-cors-anywhere": "bin/local-cors-anywhere"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "scripts": {
+    "local-cors-anywhere": "bin/local-cors-anywhere"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkaoster/local-cors-anywhere.git"
+  },
+  "keywords": [
+    "cors",
+    "cross-domain",
+    "http-proxy",
+    "local"
+  ],
+  "author": "Daniel Kao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dkaoster/local-cors-anywhere/issues"
+  },
+  "homepage": "https://github.com/dkaoster/local-cors-anywhere#readme",
+  "dependencies": {
+    "commander": "^7.1.0",
+    "cors-anywhere": "^0.4.3"
+  }
+}

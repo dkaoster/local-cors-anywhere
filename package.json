@@ -31,6 +31,6 @@
   "homepage": "https://github.com/dkaoster/local-cors-anywhere#readme",
   "dependencies": {
     "commander": "^7.1.0",
-    "cors-anywhere": "^0.4.3"
+    "cors-anywhere": "^0.4.4"
   }
 }

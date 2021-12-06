@@ -10,7 +10,6 @@ commander
   .description('A quick npx script for running a local cors-anywhere instance')
   .option('-h, --host <host>', 'Listen on a specific host, or set the HOST env variable')
   .option('-p, --port <port>', 'Listen on a specific port, or set the PORT env variable')
-  .option('-o, --origin <origin...>', 'Listen on a specific origin(s), or set the ORIGIN env variable')
   .parse(process.argv);
 
 // Listen on a specific host via the HOST environment variable
@@ -19,7 +18,7 @@ const host = commander.host || process.env.HOST || '0.0.0.0';
 const port = commander.port || process.env.PORT || 8080;
 
 cors_proxy.createServer({
-    originWhitelist: commander.origin || JSON.parse(process.env.ORIGIN) || [],
+    originWhitelist: [], // Allow all origins
     requireHeader: ['origin', 'x-requested-with'],
     removeHeaders: ['cookie', 'cookie2']
 })
